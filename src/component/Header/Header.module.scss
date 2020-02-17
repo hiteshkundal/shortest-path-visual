@@ -1,0 +1,45 @@
+.Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    background-color: #2a4d69;
+    color: white;
+    div {
+        button {
+            margin: 0.5em 0.5rem 0.5rem 0;
+            padding: 0.5em;
+            border : 1px solid black;
+            color: black;
+            font-size: 1rem;
+            outline: none;
+            border-radius: 5px;
+            font-family: inherit;
+            font-weight: 500;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            cursor: pointer;
+            &:hover{
+                background-color: #2a4d69;
+                color: white;
+                border-color: white;
+            }  
+            &:disabled{
+                background-color : #cccccc;
+                pointer-events: none;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .Header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+     }
+    
+  }

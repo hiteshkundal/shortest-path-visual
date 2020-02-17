@@ -1,0 +1,92 @@
+.node {
+    width : 25px;
+    height : 25px;
+    display: inline-block;
+    outline: 1px solid #2a4d69 ;
+   
+}
+.node-reset {
+  width : 25px;
+  height : 25px;
+  display: inline-block;
+  outline: 1px solid #2a4d69 ;
+}
+.node-start {
+  background-image: url('../../assets/mario.png');
+   background-size: cover;
+   z-index: 12;
+}
+
+.node-finish{
+  background-image: url('../../assets/queen.png');
+  background-size: cover;
+  z-index: 12;
+}
+
+.node-visited {
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes visitedAnimation {
+    0% {
+      transform: scale(0.3);
+      background-color: #63ace5;
+      border-radius: 100%;
+    }
+  
+    50% {
+      background-color: #adcbe3;
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: #adcbe3;
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: #63ace5;
+    }
+  }
+
+  .node-shortest-path {
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes shortestPath {
+    0% {
+      transform: scale(0.6);
+      background-color:  #f9caa7;
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color:  #f9caa7;
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color:  #f9caa7;
+    }
+  }
+
+
+.node-wall {
+  background-color: rebeccapurple;
+}
+
+
