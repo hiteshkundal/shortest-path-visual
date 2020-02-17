@@ -26,8 +26,10 @@
                 border-color: white;
             }  
             &:disabled{
-                background-color : #cccccc;
+                background-color : 	rgba(128, 128, 128, 0.8);
+                color: rgba(255, 255, 255, 0.5);
                 pointer-events: none;
+                cursor: not-allowed;
             }
         }
     }
