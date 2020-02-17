@@ -76,7 +76,7 @@ const Pathfinder = () => {
     setMousePressed(false);
     setStartMoving(false);
     setFinishMoving(false);
-    setDisableClearGridBtn(false);
+    // setDisableClearGridBtn(false);
   };
 
   const startAnimation = () => {
@@ -94,6 +94,9 @@ const Pathfinder = () => {
 
   const clearGridHandle = () => {
     setDisableAnimationButton(false);
+    setMousePressed(false);
+    setStartMoving(false);
+    setFinishMoving(false);
     setIsClearingGrid((prev) => !prev);
     animationReset(visitingNodes);
     setDisableClearGridBtn(true);
